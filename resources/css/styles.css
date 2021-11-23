@@ -1,0 +1,59 @@
+/* Fonts */
+
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(19,25,33);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.navbar a.logo_link { /* Logo enclosing hyperlink */
+    width: 97px;
+    height: 30px;
+    margin: auto 0 auto 10px;
+}
+
+.navbar .logo { /* Actual logo image */
+    width: 97px;
+    height: 30px;
+    margin: auto 0 auto 10px;   
+}
+
+.navbar ul {
+    margin: auto 0 auto 48%;
+}
+
+.navbar li { /* Menu links */
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+    font-family: "Amazon Ember";
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a::after { /* Creates a 2px height, 0 width white background empty block element */
+    display: block;
+    width: 0;
+    height: 2px;
+    content: '';
+    background-color: white;
+    position: relative;
+    transition: all ease-in-out 300ms;
+}
+
+.navbar ul li a:hover::after { /* Triggers the animation, block element goes from 0 to width  of li */
+    width: 100%;
+}
+
