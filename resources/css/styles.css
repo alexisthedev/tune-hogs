@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+@import url(https://db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
 
 /* Navbar */
 
@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     display: flex;
+    justify-content: space-between;
 }
 
 .navbar a.logo_link { /* Logo enclosing hyperlink */
@@ -27,7 +28,7 @@
 }
 
 .navbar ul {
-    margin: auto 0 auto 48%;
+    margin: auto 40px auto 0;
 }
 
 .navbar li { /* Menu links */
