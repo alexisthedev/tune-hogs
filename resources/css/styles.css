@@ -99,3 +99,34 @@ body {
     font-family: 'Merriweather', serif;
     font-weight: 700;
 }
+
+/* Album Sector */
+
+.albumlist { /* Parent of .container and h2 */
+    position: relative;
+    width: 100%;
+    top: 430px;
+}
+
+.albumlist h2 { /* Album Selection Label */
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container { /* Parent Element of Album Covers */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 999px;
+    justify-content: space-around;
+}
+
+.container .album { /* Album Cover */
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+/* KANE HOVER STA ALBUM NA FENETE O TITLOS!!! */
