@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300;1,400;1,700&display=swap');
 
 @font-face {
     font-family: Streetwear;
@@ -103,15 +103,17 @@ body {
 /* Album Sector */
 
 .albumlist { /* Parent of .container and h2 */
-    position: relative;
+    position: absolute;
     width: 100%;
     top: 430px;
+    left: 0;
 }
 
 .albumlist h2 { /* Album Selection Label */
     font-family: 'Merriweather', serif;
     font-size: 30px;
     text-align: center;
+    margin-top: 35px;
 }
 
 .container { /* Parent Element of Album Covers */
@@ -123,10 +125,34 @@ body {
     justify-content: space-around;
 }
 
-.container .album { /* Album Cover */
-    width: 200px;
-    height: 200px;
+.container .album { /* Album container title+cover */
     margin-bottom: 50px;
+    max-width: 200px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
-/* KANE HOVER STA ALBUM NA FENETE O TITLOS!!! */
+.container .album .album-art { /* Album Cover */
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 8px;
+}
+
+.container .album .album-title { /* Album Name */
+    font-weight: 700;
+    font-style: italic;
+}
+
+.container .album .profile-link { /* Instagram profile links */
+    text-decoration: none;
+    color: rgb(117, 10, 31);
+    font-weight: 700;
+    font-style: bold;
+    font-size: 15px;
+}
+
+.container .album .profile-link:hover {
+    text-decoration: underline;
+}
+
