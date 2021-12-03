@@ -11,6 +11,7 @@
 
 body {
     background-color: rgb(238, 222, 200);
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -193,7 +194,7 @@ body {
 
 .aotm-container .album-review {
     height: 292px;
-    max-width: 750px;
+    max-width: 740px;
     text-align: right;
     font-family: 'Merriweather', serif;
     font-size: 15px;
