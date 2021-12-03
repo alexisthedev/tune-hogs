@@ -190,6 +190,9 @@ body {
 .aotm-container #aotm {
     height: 292px;
     width: 292px;
+    /* box-shadow: 6px 2px 16px 0px rgba(0, 0, 0, 0.48) , -6px -2px 16px 0px rgba(0, 0, 0, 0.8); */
+    box-shadow: 10px 8px 0px rgb(168, 136, 5);
+    border-radius: 8px;
 }
 
 .aotm-container .album-review {
