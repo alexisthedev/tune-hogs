@@ -64,6 +64,9 @@ body {
     width: 100%;
 }
 
+
+/* ------------------------ MAIN PAGE (index.html) ------------------------ */
+
 /* Welcome Image */
 
 .welcome {
@@ -155,4 +158,58 @@ body {
 .container .album .profile-link:hover {
     text-decoration: underline;
 }
+
+
+/* ------------------------ ALBUM OF THE MONTH (aotm.html) ------------------------ */
+
+/* Album Reviews */
+
+.aotm-header {
+    position: absolute;
+    top: 80px;
+    margin: 50px 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.aotm-container {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aotm-container #aotm {
+    height: 292px;
+    width: 292px;
+}
+
+.aotm-container .album-review {
+    height: 292px;
+    max-width: 750px;
+    text-align: right;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.aotm-container .album-review .review q {
+    font-weight: 700;
+}
+
+.aotm-container .album-review .rating {
+    width: 100%;
+    font-size: 20px;
+}
+
+/* Video Sector */
 
