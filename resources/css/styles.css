@@ -14,23 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-}
-
-footer p {
-    font-family: 'Merriweather', serif;
-    font-size: 14px;
-    color: gray;
-    margin: auto auto;
-}
-
 /* Navbar */
 
 .navbar {
@@ -82,6 +65,24 @@ footer p {
     width: 100%;
 }
 
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+footer p {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    color: gray;
+    margin: auto auto;
+}
 
 /* ------------------------ MAIN PAGE (index.html) ------------------------ */
 
@@ -249,4 +250,79 @@ footer p {
 
 #easy-on-me {
     margin: 0 auto 40px auto;
+}
+
+/* ------------------------ PRODUCTS (products.html) ------------------------ */
+
+/* Product Menu */
+
+.sections-container {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sections-container .product-section {
+    width: 250px;
+    height: 280px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 300ms ease-in-out;
+}
+
+.sections-container .product-section:hover {
+    transform: scale(1.2)
+}
+
+#vinyls, #turntables{
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#vinyls::before {
+    content: "";
+    background-image: url('../images/products/vinyl.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#turntables::before {
+    content: "";
+    background-image: url('../images/products/turntable.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.sections-container .product-section h2 {
+    position: relative;
+    opacity: 100%;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: rgba(238, 222, 200);
+    border: 1px solid rgb(238, 222, 200);
+    border-radius: 12px;
+    padding: 5px;
 }
