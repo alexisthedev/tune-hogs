@@ -296,7 +296,6 @@ footer p {
 }
 
 .sections-container .product-section h2 { /* Name of the section */
-    display: inline;
     text-align: center;
     font-family: 'Merriweather', serif;
     font-weight: 400;
@@ -308,3 +307,11 @@ footer p {
     border-radius: 8px;
     padding: 5px;
 }
+
+.sections-container a { /* Removes underline and purple color of link text */
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------ VINYLS (vinyls.html) ------------------------ */
+
