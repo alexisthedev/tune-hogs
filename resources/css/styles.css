@@ -313,5 +313,71 @@ footer p {
     color: black;
 }
 
-/* ------------------------ VINYLS (vinyls.html) ------------------------ */
+/* ------------------------ VINYLS & TURNTABLES (vinyls.html, turntables.html) ------------------------ */
 
+main.table-container { /* Screen-wide container of table  */
+    width: 100%;
+    height: 3300px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: flex;
+    background-image: url('../images/products/record-stacks.jpg');
+    background-size: contain;
+}
+
+main.table-container table { /* Positions the table */
+    position: absolute;
+    top: 80px;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    background-color: rgb(196,159,106, 0.8);
+    margin: auto 0;
+    padding: 0 20px;
+}
+
+main.table-container td { /* Styles the gray line between each table row */
+    padding: 50px 0;
+}
+
+main.table-container .table-cell { /* Container of product data in each td element */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main.table-container .product-info { /* Contains product image and name */
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    max-width: 200px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+main.table-container .buy-product { /* Contains price and buy now button */
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+
+main.table-container .buy-button { /* Buy Now button */
+    margin: 0 0;
+    padding: 8px;
+    border-radius: 4px;
+    background-color:rgb(236, 149, 18);
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    transition: background-color 300ms ease-in-out; /* Makes color change (seen below) smooth */
+}
+
+main.table-container .buy-button:hover { /* Changes button color upon hovering */
+    background-color: rgb(199, 37, 37);
+}
+
+main.table-container a {
+    text-decoration: none;
+}
