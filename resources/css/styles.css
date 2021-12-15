@@ -322,8 +322,15 @@ main.table-container { /* Screen-wide container of table  */
     top: 80px;
     left: 0;
     display: flex;
-    background-image: url('../images/products/record-stacks.jpg');
     background-size: contain;
+}
+
+#vinyl-table {
+    background-image: url('../images/products/record-stacks.jpg');
+}
+
+#record-player-table {
+    background-image: url('../images/products/record-player.jpg');
 }
 
 main.table-container table { /* Positions the table */
