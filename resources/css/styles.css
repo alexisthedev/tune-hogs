@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300;1,400;1,700&family=Roboto+Slab&display=swap');
 
 @font-face {
     font-family: Streetwear;
@@ -99,7 +99,7 @@ footer p {
     align-items: center;
 }
 
-.welcome::before {
+.welcome::before { /* CSS trick to compartmentalize the div's background-image opacity and h1 opacity */
     content: "";
     background-image: url('../images/main_page.jpg');
     background-position: center;
@@ -387,4 +387,70 @@ main.table-container .buy-button:hover { /* Changes button color upon hovering *
 
 main.table-container a {
     text-decoration: none;
+}
+
+/* ------------------------ ABOUT US (about.html) ------------------------ */
+
+.about-us { /* Banner picture of street and text over it */
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us::before { /* CSS trick to compartmentalize the div's background-image opacity and h1 opacity */
+    content: "";
+    background-image: url('../images/about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 30%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.about-us .about-text { /* Text in front of banner picture */
+    position: relative;
+    opacity: 100%;
+    color: black;
+    font-size: 80px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.story-container { /* Contains the story and the decorative line */
+    width: 100%;
+    position: absolute;
+    top: 410px;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-container img{ /* Decorative line between banner picture and text */
+    margin: 0 auto;
+    height: 150px;
+    width: 300px;
+    opacity: 0.8;
+}
+
+.story-container .story {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.story-container .story p {
+    display: inline-block;
+    max-width: 500px;
+    font-family: 'Roboto Slab', serif;
+    margin: 0 50px;
+    text-align: justify;
 }
