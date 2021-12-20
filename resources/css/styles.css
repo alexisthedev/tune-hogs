@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300;1,400;1,700&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap');
 
 @font-face {
     font-family: Streetwear;
@@ -252,23 +252,89 @@ footer p {
     margin: 0 auto 40px auto;
 }
 
+/* ------------------------ GRAMMYS (grammys.html) ------------------------ */
+
+.grammy-banner { /* Banner picture of street and text over it */
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grammy-banner::before { /* CSS trick to compartmentalize the div's background-image opacity and h1 opacity */
+    content: "";
+    background-image: url('../images/grammy.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.grammy-banner .grammy-text { /* Text in front of banner picture */
+    position: relative;
+    opacity: 100%;
+    color: black;
+    font-size: 80px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.category-container { /* Contains all tables with category nominees */
+    position: absolute;
+    top: 480px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-table { /* Table with category nominees */
+    width: 350px;
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 100px;
+}
+
+.category-table th { /* Category Name */
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+.category-table td { /* Nominee data */
+    padding: 10px 0;
+}
+
 /* ------------------------ PRODUCTS (products.html) ------------------------ */
 
 /* Product Menu */
 
 .sections-container { /* Contains the two section-showcase divs (vinyls & turntables) */
+    height: 100%;
     width: 100%;
-    height: 500px;
-    position: absolute;
-    top: 80px;
+    position: fixed;
+    z-index: -1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .sections-container .product-section { /* Contains the section's name and background image */
-    width: 250px;
-    height: 280px;
+    margin: auto 0;
+    width: 500px;
+    height: 350px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     display: flex;
     flex-direction: column;
@@ -396,7 +462,7 @@ main.table-container a {
     left: 0;
     top: 80px;
     width: 100%;
-    height: 350px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,7 +494,7 @@ main.table-container a {
 .story-container { /* Contains the story and the decorative line */
     width: 100%;
     position: absolute;
-    top: 410px;
+    top: 310px;
     display: flex;
     flex-direction: column;
 }
@@ -440,7 +506,7 @@ main.table-container a {
     opacity: 0.8;
 }
 
-.story-container .story {
+.story-container .story { /* Contains Eglish and Greek version of about-us text */
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -455,63 +521,29 @@ main.table-container a {
     text-align: justify;
 }
 
-/* ------------------------ GRAMMYS (grammys.html) ------------------------ */
-
-.grammy-banner { /* Banner picture of street and text over it */
-    position: absolute;
-    left: 0;
-    top: 80px;
+.contact-details { /* Contains table with student data */
     width: 100%;
-    height: 350px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.grammy-banner::before { /* CSS trick to compartmentalize the div's background-image opacity and h1 opacity */
-    content: "";
-    background-image: url('../images/grammy.png');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 50%;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: 800px;
 }
 
-.grammy-banner .grammy-text { /* Text in front of banner picture */
-    position: relative;
-    opacity: 100%;
-    color: black;
-    font-size: 80px;
-    font-family: 'Merriweather', serif;
-    font-weight: 700;
-}
-
-.category-container { /* Contains all tables with category nominees */
-    position: absolute;
-    top: 480px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.category-table { /* Table with category nominees */
+.contact-details table {
+    font-family: 'Roboto Slab', serif;
+    border: 5px solid rgba(196, 159, 106, 0.9);
     margin-bottom: 100px;
-    font-family: 'Merriweather', serif;
-    font-size: 14px;
-    text-align: center;
+    padding: 10px;
 }
 
-.category-table th { /* Category Name */
-    font-weight: 700;
-    font-size: 22px;
-    padding-bottom: 15px;
+.contact-details th { 
+    font-size: 20px;
 }
 
-.category-table td {
-    padding: 10px 0;
+.contact-details td {
+    padding: 10px;
+}
+
+.contact-details a { /* Links on student names */
+    color: brown;
 }
